@@ -39,7 +39,7 @@ body{
     background: var(--third-color);
 }
 .box-2 > .form-mobil{
-    padding: 20px;
+    margin: 20px;
 }
 
 .box-2 > .form-mobil > div:nth-child(2){
