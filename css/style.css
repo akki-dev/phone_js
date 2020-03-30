@@ -1,0 +1,53 @@
+/* ------------------------------ General Style ----------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+}
+
+:root{
+    --first-color: #154360;
+    --second-color: #2471A3; 
+    --third-color: #2E86C1;
+    --fourt-color: #A9CCE3;
+    --white: #fff;
+}
+
+
+body{
+    color: white;
+    background: var(--first-color);
+}
+
+.app{
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.box-1{
+    background: var(--second-color);
+}
+
+.box-1 > .ima{
+    padding: 20px;
+}
+
+.box-2{
+    background: var(--third-color);
+}
+.box-2 > .form-mobil{
+    padding: 20px;
+}
+
+.box-2 > .form-mobil > div:nth-child(2){
+    margin-top: 20px;
+}
+
+.box-2 > .form-mobil > button{
+    margin-top: 20px;
+    color: var(--white);
+    background: var(--first-color);
+}
