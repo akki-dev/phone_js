@@ -42,12 +42,17 @@ body{
     margin: 20px;
 }
 
-.box-2 > .form-mobil > div:nth-child(2){
+.box-2 > .form-mobil > .form-box {
     margin-top: 20px;
 }
 
-.box-2 > .form-mobil > button{
-    margin-top: 20px;
+.box-2 > .button-box{
+    margin: 10px 20px;
     color: var(--white);
     background: var(--first-color);
+}
+
+.box-2 > .button-box:hover{
+    color: var(--first-color);
+    background: var(--white);
 }

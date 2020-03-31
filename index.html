@@ -37,18 +37,28 @@
                                 <option value="">Samsung</option>
                             </select>
                         </div>
-                        <div class="form-row">
+                        <div class="form-box form-row">
                             <div class="col">
-                                <label for="">Price</label>
-                                <input type="text" class="form-control" name="" placeholder="Price" id="" required>
+                                <label for="">Quantity</label>
+                                <input type="number" class="form-control" name="" id="quantity">
                             </div>
                             <div class="col">
-                                <label for="">Price</label>
-                                <input type="text" class="form-control" name="" placeholder="Price" id="" required>
+                                <label for="">Paying</label>
+                                <input type="number" class="form-control" name="" id="paying">
                             </div>
                         </div>
-                        <button class="btn btn-1" type="submit">Sumbit</button>
+                        <div class="form-box form-row">
+                            <div class="col">
+                                <label for="">I.G.V</label>
+                                <input type="number" class="form-control" name="" id="igv" value="0.00" readonly>
+                            </div>
+                            <div class="col">
+                                <label for="">Total</label>
+                                <input type="number" class="form-control" name="" id="total" value="0.00" readonly>
+                            </div>
+                        </div>
                     </form>
+                    <button class="button-box btn btn-1" type="submit" onclick="suma()">Sumbit</button>
                 </div>
             </div>
         </div>
