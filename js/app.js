@@ -6,21 +6,18 @@ function changeC() {
     let objOp = document.getElementById('option_s').value;
     let objIma = document.getElementById('Image');
     let price = document.getElementById('price');
-
     (objOp == '0') ? (change = 'iphone',
-        priceMovil = 100) :
+        priceMovil = 99.99) :
     (objOp == '1') ? (change = 'huawei',
-        priceMovil = 200) :
+        priceMovil = 199.99) :
     (objOp == '2') ? (change = 'xiaomi',
-        priceMovil = 300) :
+        priceMovil = 299.99) :
     (objOp == '3') ? (change = 'samsung',
-        priceMovil = 400) :
+        priceMovil = 399.99) :
     priceMovil = 0;
-
     price.value = priceMovil.toFixed(2);
     objIma.src = "img/" + change + ".png";
 }
-
 
 function calculate() {
     let option_s = document.getElementById('option_s').value;
@@ -31,16 +28,17 @@ function calculate() {
     let turned = document.getElementById('turned');
 
     for (let i = 0; i < option_s.length; i++) {
-        (option_s[i] == '0') ? priceMovil = 100:
-        (option_s[i] == '1') ? priceMovil = 200 :
-        (option_s[i] == '2') ? priceMovil = 300 :
-        (option_s[i] == '3') ? priceMovil = 400 :
+        (option_s[i] == '0') ? priceMovil = 99.99:
+        (option_s[i] == '1') ? priceMovil = 199.99 :
+        (option_s[i] == '2') ? priceMovil = 299.99 :
+        (option_s[i] == '3') ? priceMovil = 399.99 :
         priceMovil = 0;
         totalM = quantity * priceMovil;
         igvM = totalM * 0.18;
         turnedM = paying - totalM;
-        total.value = totalM.toFixed(2);
+        (turnedM > 0) ? turned.value = turnedM.toFixed(2):
+        turned.value='Lacks Money';
         igv.value = igvM.toFixed(2);
-        turned.value = turnedM.toFixed(2);
+        total.value=totalM.toFixed(2);
     }
 }
